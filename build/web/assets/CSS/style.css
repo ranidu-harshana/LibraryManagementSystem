@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.formSection {
+  margin-top: 10%;
+}
+
+.login {
+  margin-top: 4%;
+}
+
+.tabBack {
+  background-color: rgb(212, 20, 199);
+}
+
+.sidenav {
+  height: 100vh;
+}
+
+.sidenav a,
+.dropdown-btn,
+.dropdownBack {
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  background-color: rgb(73, 151, 254);
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.active {
+  background-color: rgb(68, 208, 68);
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}

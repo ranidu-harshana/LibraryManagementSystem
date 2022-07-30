@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 30, 2022 12:38:56 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Models.Books" table="books" catalog="lms_db" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" not-null="true" />
+        </property>
+        <property name="isbn" type="string">
+            <column name="isbn" length="50" not-null="true" />
+        </property>
+        <property name="publisherName" type="string">
+            <column name="publisher_name" length="100" not-null="true" />
+        </property>
+        <property name="pubDate" type="date">
+            <column name="pub_date" length="10" not-null="true" />
+        </property>
+        <property name="createdAt" type="timestamp">
+            <column name="created_at" length="19" not-null="true" />
+        </property>
+        <property name="status" type="byte">
+            <column name="status" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
