@@ -43,5 +43,5 @@
         </div>
       </div>
     </div>
-<%@include  file="../includes/datatable_footer.jsp" %>
+<%@include  file="includes/datatable_footer.jsp" %>
 

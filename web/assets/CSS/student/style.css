@@ -1,0 +1,548 @@
+@media (max-width: 575.98px) {
+  
+
+}
+
+body {
+    background-color: #f3f6f9;
+}
+/* --------Navigation bar------------ */
+
+/* Navabar background color */
+.navbar {
+  background-color: #4997fe;
+}
+
+/* Navbar Logo Positon and Size */
+#navbarLogo {
+  margin-top: -10px;  
+}
+
+/* Navbar Menu Itemm Color */
+.menuText {
+  /* background-color: #1616ff; */
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* navbar Menu Item Hover Color */
+a.hmT:hover {
+  color: #edebeb;
+}
+
+/* Navbar Toggle icon color change - in the small screens */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+
+
+/*---------animation--------------*/
+
+.context {
+  width: 100%;
+  position: absolute;
+  top:15vh;
+  color: #4997fe;
+  
+}
+
+.area{
+  background: #f2f2f2;    
+  width: 100%;
+  height:50vh;   
+}
+
+/* .circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255,0.5);
+  animation: animate 25s linear infinite;
+  bottom: -100px;
+  
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+
+} */
+
+.viewButton{
+  background-color: #4997fe;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------ Timeline Section Styles ------- */
+
+/* timeline ,left ,mid and right section background color */
+#filter-section,
+#booking-section,
+#post-section,
+#map-section {
+  background-color: #f3f6f9;
+}
+
+.ttt{
+  position: fixed;
+}
+
+#timeline,
+#findGarage {
+  background-color: #f3f6f9;
+}
+
+/* Button Group Card Corner */
+.roundedBox {
+  border-radius: 10px;
+}
+
+/* Search Box coner */
+.searchBox {
+  border-radius: 20px;
+}
+
+/* post section buttons width */
+.TopButtons {
+  width: 45%;
+  height: 2rem;
+}
+
+/* Side Nave Styles - Mobile view */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Post senction Top User Profile Icon */
+.postpro {
+  font-size: 40px;
+}
+
+/* User green states */
+.greenState {
+  color: #7fff00;
+}
+
+/* User green states */
+.redState {
+  color: red;
+}
+
+/* User green states */
+.yellowState {
+  color: yellow;
+}
+
+.detailsBack {
+  border: #5b5c5d 1px solid;
+}
+
+/* Table content line height */
+.table,
+.userTopName {
+  line-height: 1.2;
+}
+
+/* Add comment Input Field */
+.addCommentInput {
+  border-radius: 15px;
+  height: 1.6rem;
+}
+
+/* Add comment send and cancel button */
+.addCommentButton {
+  height: 1.4rem;
+  font-size: 10px;
+  border-radius: 15px;
+  padding-bottom: 10px;
+  margin-top: 1%;
+}
+
+/* User Comment Section Image Properties */
+.userImageSize {
+  width: 40px;
+  height: 40px;
+}
+
+/* Comment Field User Profile picture */
+.userProfImg {
+  width: 40px;
+  height: 40px;
+}
+
+/* Post menu three dots */
+.dotIcon {
+  height: 15px;
+}
+
+/*Input feild with Search Button */
+.custom-search {
+  position: relative;
+}
+.custom-search-input {
+  width: 100%;
+  padding-right: 100px !important;
+  box-sizing: border-box;
+}
+.custom-search-botton {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  line-height: 1 !important;
+  z-index: 1;
+}
+
+/*------Go To Profile Butto In Find Garage Page ------*/
+.goToProf{
+  background-color: #2f98ef;
+  color: white;
+}
+
+/* ############################################################################################################################################################################################################################################################ */
+
+
+
+:root{  
+  --color-car-body:#32527b;  
+  --color-bg-1:#e4ffff;  
+}  
+    
+
+.car__top{  
+  margin-left: 10vmin;  
+  width: 12vmin;  
+  height: 11vmin;  
+  transform: skew(-10deg);  
+  border:2vmin solid #4a4c48;  
+  border-radius: 1vmin;  
+  border-right: 0;  
+}  
+.car__top::after{  
+  content: '';  
+  position: absolute;  
+  top: -1.9vmin; 
+  right: 0;  
+  width: 10vmin;  
+  height: 100%;  
+  transform:translateX(120%) skew(50deg);  
+  border:2vmin solid #4a4c48;  
+  border-left: 0;  
+}  
+.car__top::before{  
+  content: '';  
+  position: absolute;  
+  top: -1.9vmin;  
+  right: 0;  
+  width: 16vmin;  
+  height: 100%;  
+  transform: translateX(70%) skew(10deg);  
+  border:2vmin solid #4a4c48;  
+  border-right: 0;  
+  border-top: 0;  
+}  
+.car__body{  
+  width: 50vmin;  
+  height: 13vmin;  
+  background-color: var(--color-car-body);  
+  border-radius: 10vmin;  
+  margin-top: 0.5vmin;  
+  position: relative;  
+  z-index: 10;  
+}  
+.car__bulb{  
+  position: absolute;  
+  top: 14%;  
+  right: 2%;  
+  width: 2vmin;  
+  height: 4vmin;  
+  border-radius: 1rem / 1.4rem;  
+  transform: rotate(-40deg);  
+  background-color: #fff;  
+}  
+.car__bulb--back{  
+  top: 14%;  
+  left: 2%;  
+  transform: rotate(35deg);  
+  background-color:#d14022;  
+}  
+.car__center{  
+  position: absolute;  
+  top: 50%;  
+  left:50%;  
+  transform: translate(-50%,-50%);  
+  width: 10vmin;  
+  height: 2vmin;  
+  border-radius: 2vmin;  
+  background-color: #fff;  
+}  
+.car__wheels{  
+  display: flex;  
+  justify-content: space-around;  
+  margin-top: -8vmin;  
+  position: relative;  
+  z-index: 200;  
+}  
+.car__wheel{  
+    --r:14vmin;  
+    width: var(--r);  
+    height:var(--r);  
+    border-radius: 50%;  
+    border: 1.8vmin solid #323232;  
+    background-color: #fff;  
+    position: relative;  
+    animation: run .5s 1s linear infinite;  
+}  
+.wheel__circle{  
+  --r:2.4vmin;  
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%,-50%);  
+  width:var(--r);  
+  height:var(--r);  
+  border-radius: 50%;  
+  background-color: #323232;  
+}  
+.wheel__rect{  
+  position: absolute;  
+  width: 2.8vmin;  
+  height: 3.1vmin;  
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);  
+  background-color: #323232;  
+}  
+.wheel__rect--1{  
+  top: 30%;  
+  left: 35%;  
+  transform: translate(-50%,-50%) rotate(-40deg);  
+}  
+.wheel__rect--2{  
+  top: 30%;  
+  left: 64%;  
+  transform: translate(-50%,-50%) rotate(35deg);  
+}  
+.wheel__rect--3{  
+  top: 50%;  
+  left: 25%;  
+  transform: translate(-50%,-50%) rotate(-90deg);  
+}  
+.wheel__rect--4{  
+  top: 50%;  
+  left: 75%;  
+  transform: translate(-50%,-50%) rotate(90deg);  
+}  
+.wheel__rect--5{  
+  top: 70%;  
+  left: 35%;  
+  transform: translate(-50%,-50%) rotate(-145deg);  
+}  
+.wheel__rect--6{  
+  top: 70%;  
+  left: 64%;  
+  transform: translate(-50%,-50%) rotate(146deg);  
+}  
+
+
+ 
+@keyframes cloud {  
+  0%{  
+    transform: translateX(100vw);  
+  }  
+  100%{  
+    transform: translateX(-100vw);  
+  }  
+}  
+
+@keyframes run {  
+  0%{  
+    transform: rotate(0deg);  
+  }  
+  100%{  
+    transform: rotate(360deg);  
+  }  
+}  
+@keyframes start-car {  
+    0%,10%,20%{  
+      transform: translate(-50%,-100%);  
+    }  
+    5%{  
+      transform: translate(-40%,-100%);  
+    }  
+    15%{  
+      transform: translate(-45%,-100%);  
+    }  
+    25%{  
+      transform: translate(-45%,-100%) rotate(-20deg);  
+    }  
+    35%,45%,50%{  
+      transform: translate(-45%,-100%) rotate(0deg);  
+    }  
+    40%{  
+      transform: translate(-45%,-100%) rotate(-10deg);  
+    }  
+    47%{  
+      transform: translate(-45%,-100%) rotate(-5deg);  
+    }  
+    70%{  
+      transform: translate(20%,-100%) rotate(0deg);  
+    }  
+    100%{  
+      transform: translate(-50%,-100%) rotate(0deg);  
+    }  
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.txtNon{
+  text-decoration: none;
+}

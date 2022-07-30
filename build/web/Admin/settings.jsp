@@ -1,7 +1,7 @@
 <%@include  file="includes/header.jsp" %>
     <div class="container-fluid">
       <div class="row">
-        <%@include  file="../includes/sidebar.jsp" %>
+        <%@include  file="includes/sidebar.jsp" %>
         <div class="col-6">
           <div class="card bg-light mt-5">
             <div class="p-3 py-3">
@@ -51,4 +51,4 @@
       </div>
     </div>
 
-<%@include  file="../includes/footer.jsp" %>
+<%@include  file="includes/footer.jsp" %>

@@ -28,6 +28,18 @@
         <servlet-name>LogoutUser</servlet-name>
         <servlet-class>Controllers.UserController.LogoutUser</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>IssueBook</servlet-name>
+        <servlet-class>Controllers.BookController.IssueBook</servlet-class>
+        <init-param>
+            <param-name>Name</param-name>
+            <param-value>Value</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewBook</servlet-name>
+        <servlet-class>Controllers.BookController.ViewBook</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ViewUser</servlet-name>
         <url-pattern>/ViewUser</url-pattern>
@@ -55,6 +67,14 @@
     <servlet-mapping>
         <servlet-name>LogoutUser</servlet-name>
         <url-pattern>/LogoutUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>IssueBook</servlet-name>
+        <url-pattern>/IssueBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewBook</servlet-name>
+        <url-pattern>/ViewBook</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

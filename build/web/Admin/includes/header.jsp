@@ -7,7 +7,7 @@
         response.sendRedirect("../Student/index.jsp");
     }
 } else {
-    response.sendRedirect("../index.jsp");
+    response.sendRedirect("../login.jsp");
 }%>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,56 +1,79 @@
-<%@page import="java.sql.PreparedStatement"%>
-<%@page import="java.sql.Connection"%>
-<%@page import="java.sql.Statement"%>
-<%@page import="Models.DBConnection"%>
-<%@page import="java.sql.ResultSet"%>
 <%@include  file="includes/header.jsp" %>
+    <!-- ######  Navigation Bar ########## -->
+    <%@include  file="includes/top-nav.jsp" %> 
+    <!-- ######  Navigation Bar End ###### -->
 
-    <div class="container-fluid">
-      <div class="row">
-        <%@include  file="../includes/sidebar.jsp" %>
-        <div class="col-10 offset-2" id="main">
-          <h1
-            class="text-center mt-4"
-            style="font-family: Arial, Helvetica, sans-serif"
-          >
-            Overall Details
-          </h1>
 
-          <div class="row">
+    <div class="mt-5"></div> <!-- Space after the navigation bar -->
+
+
+    <!-- ### BOXES ###-->
+    <section id="boxes" class="py-3" style="background-color: #f3f6f9;">
+      <div class="container">
+          <div class="row mt-2">
               
-            <div class="col-3">
-              <div class="card">
-                <div class="card-body">Registerd Student -</div>
+            <%@include  file="includes/side-nav.jsp" %> 
+
+              <div class="col-md-9" id="dprofile">
+                  <div class="card bg-light">
+                      <img class="rounded-circle mt-4 ml-4" width="150px" src="http://localhost:8080/LibraryManagementSystem/assets/img/pro.png">
+                      <div class="p-3 py-3">
+                          <div class="d-flex justify-content-between align-items-center mb-3">
+                              <h4 class="text-right">Profile Settings</h4>
+                          </div>
+                          <div class="row mt-2">
+                              <div class="col-md-6">
+                                  <label class="labels">First Name</label>
+                                  <input type="text" class="form-control" value="">
+                              </div>
+                              <div class="col-md-6">
+                                  <label class="labels">Last Name</label>
+                                  <input type="text" class="form-control" >
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12 mt-2">
+                                  <label class="labels">User Name</label>
+                                  <input type="text" class="form-control" value="">
+                              </div>
+                              <div class="col-md-12 mt-2">
+                                  <label class="labels">Email</label>
+                                  <input type="text" class="form-control" >
+                              </div>
+                              <div class="col-md-12 mt-2">
+                                  <label class="labels">University/School</label>
+                                  <input type="text" class="form-control" >
+                              </div>
+                              
+                              <div class="col-md-12 mt-2">
+                                  <label class="labels">Mobile Number</label>
+                                  <input type="text" class="form-control" >
+                              </div>
+                              <div class="col-md-12 mt-2">
+                                  <label class="labels">Address</label>
+                                  <input type="text" class="form-control" >
+                              </div> 
+                          </div>
+  
+                          <div class="row mt-3">
+                              <div class="col-md-6">
+                                  <label class="labels">Country</label>
+                                  <input type="text" class="form-control" >
+                              </div>
+                              <div class="col-md-6">
+                                  <label class="labels">State/Region</label>
+                                  <input type="text" class="form-control" >
+                              </div>
+                          </div>
+  
+                          <div class="mt-4 ">
+                              <button class="btn profile-button text-white" type="button" style="background-color:#2f98ef;">Save Profile</button>
+                          </div>
+                      </div> 
+                  </div>         
               </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <div class="card-body">Registerd Student -</div>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="card">
-                <div class="card-body">Registerd Student -</div>
-              </div>
-            </div>
-              
-                <c:forEach var="book" items="${books}">
-                    <tr>
-                        <td>${book.id}</td>
-                        <td>${book.name}</td>
-                        <td>${book.author}</td>
-                        <td>${book.isbn}</td>
-                        <td>${book.publisher_name}</td>
-                        <td>${book.pub_date}</td>
-                        <td>${book.created_at}</td>
-                        <td>${book.status}</td>
-                        <td>${book.name}</td>
-                        <td>5421</td>
-                    </tr>
-                </c:forEach>
           </div>
-        </div>
       </div>
-    </div>
-
-<%@include  file="../includes/footer.jsp" %>
+  </section>
+    
+<%@include  file="includes/footer.jsp" %> 

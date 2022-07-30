@@ -2,15 +2,14 @@
 	pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<% if (session.getAttribute("user_id") == null) {
+<% if (session.getAttribute("user_id") != null) {
     if (session.getAttribute("role").equals("admin")) {
         response.sendRedirect("../Admin/index.jsp");
     }
 } else {
-    response.sendRedirect("../index.jsp");
+    response.sendRedirect("../login.jsp");
 }%>
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,14 +27,19 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://localhost:8080/LibraryManagementSystem/assets/CSS/style.css" />
-
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
     />
 
-    <title>LMS</title>
+    <link
+      rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css"
+    />
+
+    <link rel="stylesheet" href="http://localhost:8080/LibraryManagementSystem/assets/CSS/student/style.css" />
+
+    <title>Timeline</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
   </head>
+
   <body>

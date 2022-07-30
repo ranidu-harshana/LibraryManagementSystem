@@ -3,7 +3,7 @@
 <%@include  file="includes/header.jsp" %>
     <div class="container-fluid">
       <div class="row">
-        <%@include  file="../includes/sidebar.jsp" %>
+        <%@include  file="includes/sidebar.jsp" %>
         <div class="col-10">
           <h1 class="text-center mt-2" style="font-family: Arial, Helvetica, sans-serif" >
             Overall Details
@@ -39,4 +39,4 @@
       </div>
     </div>
 
-<%@include  file="../includes/footer.jsp" %>
+<%@include  file="includes/footer.jsp" %>

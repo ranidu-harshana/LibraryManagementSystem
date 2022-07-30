@@ -7,8 +7,9 @@
         response.sendRedirect("../Admin/index.jsp");
     }
 } else {
-    response.sendRedirect("../index.jsp");
+    response.sendRedirect("../login.jsp");
 }%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,8 +28,13 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="http://localhost:8080/LibraryManagementSystem/assets/CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="http://localhost:8080/LibraryManagementSystem/assets/CSS/student/style.css" />
 
-    <title> LMS-Login </title>
+    <title>Timeline</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
   </head>
   <body>

@@ -38,11 +38,11 @@ public class LoginUser extends HttpServlet {
                 
             } else {
                 session.setAttribute("login_failed", "Username or Password Incorrect!");
-                response.sendRedirect("index.jsp"); 
+                response.sendRedirect("login.jsp"); 
             }
         } else {
             session.setAttribute("login_failed", "Username or Password Incorrect!");
-            response.sendRedirect("index.jsp"); 
+            response.sendRedirect("login.jsp"); 
         }
     }
 }

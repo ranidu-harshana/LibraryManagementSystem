@@ -1,7 +1,7 @@
 <%@include  file="includes/header.jsp" %>
     <div class="container-fluid">
       <div class="row">
-        <%@include  file="../includes/sidebar.jsp" %>
+        <%@include  file="includes/sidebar.jsp" %>
         <div class="col-10">
           <div class="container">
         
@@ -57,13 +57,13 @@
                                 </div>
 
                                 <div class="form-outline mb-3">
-                                  <input type="text" name="publisher_name" class="form-control" placeholder="Publisher Name" value="${book.getPublisher_name()}" required/>
+                                  <input type="text" name="publisher_name" class="form-control" placeholder="Publisher Name" value="${book.getPublisherName()}" required/>
                                 </div>
 
                                 <div class="form-outline mb-3">
                                   <div class="row">
                                     <span class="ml-4 mt-1"> Published Date : </span>
-                                    <input type="date" name="pub_date" style="width: 69%" class="form-control ml-2" placeholder="Published Date" value="${book.getPub_date()}" required/>
+                                    <input type="date" name="pub_date" style="width: 69%" class="form-control ml-2" placeholder="Published Date" value="${book.getPubDate()}" required/>
                                   </div>
                                 </div>
 
@@ -81,4 +81,4 @@
       </div>
     </div>
 
-<%@include  file="../includes/footer.jsp" %>
+<%@include  file="includes/footer.jsp" %>
