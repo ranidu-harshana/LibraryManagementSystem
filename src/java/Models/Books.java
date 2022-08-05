@@ -28,18 +28,26 @@ public class Books  implements java.io.Serializable {
      private String isbn;
      private String publisherName;
      private Date pubDate;
+     private String imageFront;
+     private String imageBack;
+     private Integer availableQty;
+     private Integer borrowQty;
      private Date createdAt;
      private byte status;
 
     public Books() {
     }
 
-    public Books(String name, String author, String isbn, String publisherName, Date pubDate, Date createdAt, byte status) {
+    public Books(String name, String author, String isbn, String publisherName, Date pubDate, String imageFront, String imageBack, Integer availableQty, Integer borrowQty, Date createdAt, byte status) {
        this.name = name;
        this.author = author;
        this.isbn = isbn;
        this.publisherName = publisherName;
        this.pubDate = pubDate;
+       this.imageFront = imageFront;
+       this.imageBack = imageBack;
+       this.availableQty = availableQty;
+       this.borrowQty = borrowQty;
        this.createdAt = createdAt;
        this.status = status;
     }
@@ -86,6 +94,39 @@ public class Books  implements java.io.Serializable {
     public void setPubDate(Date pubDate) {
         this.pubDate = pubDate;
     }
+
+    public String getImageFront() {
+        return imageFront;
+    }
+
+    public void setImageFront(String imageFront) {
+        this.imageFront = imageFront;
+    }
+
+    public String getImageBack() {
+        return imageBack;
+    }
+
+    public void setImageBack(String imageBack) {
+        this.imageBack = imageBack;
+    }
+
+    public Integer getAvailableQty() {
+        return availableQty;
+    }
+
+    public void setAvailableQty(Integer availableQty) {
+        this.availableQty = availableQty;
+    }
+
+    public Integer getBorrowQty() {
+        return borrowQty;
+    }
+
+    public void setBorrowQty(Integer borrowQty) {
+        this.borrowQty = borrowQty;
+    }
+    
     public Date getCreatedAt() {
         return this.createdAt;
     }

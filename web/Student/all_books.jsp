@@ -30,8 +30,7 @@
                             <th>Author name</th>
                             <th>Publisher Name</th>
                             <th>Published Date</th>
-            <!--                <th>Quantity</th>
-                            <th>Available Qty.</th>-->
+                            <th>Available Qty.</th>
                             <th>Edit</th>
                           </tr>
                         </thead>
@@ -45,8 +44,7 @@
                                 out.println("<td>"+book.getAuthor()+"</td>");
                                 out.println("<td>"+book.getPublisherName()+"</td>");
                                 out.println("<td>"+book.getPubDate()+"</td>");
-        //                        out.println("<td>"+book.getStatus()+"</td>");
-        //                        out.println("<td>"+book.getName()+"</td>");
+                                out.println("<td>"+(book.getAvailableQty() - book.getBorrowQty())+"</td>");
                                 out.println("<td class='text-center'><a href='../ViewBook?book_id="+book.getId()+"' class='btn btn-sm viewButton px-2 '><i class='fa fa-book mr-1'></i> View</a></td>");
                                 out.println("</tr>");
                             }

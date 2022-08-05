@@ -23,6 +23,18 @@
         <property name="pubDate" type="date">
             <column name="pub_date" length="10" not-null="true" />
         </property>
+        <property name="imageFront" type="string">
+            <column name="image_front" not-null="false" />
+        </property>
+        <property name="imageBack" type="string">
+            <column name="image_back" not-null="false" />
+        </property>
+        <property name="availableQty" type="java.lang.Integer">
+            <column name="available_qty" not-null="false" />
+        </property>
+        <property name="borrowQty" type="java.lang.Integer">
+            <column name="borrow_qty" not-null="false" />
+        </property>
         <property name="createdAt" type="timestamp">
             <column name="created_at" length="19" not-null="true" />
         </property>

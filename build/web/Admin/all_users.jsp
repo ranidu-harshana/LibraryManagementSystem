@@ -1,11 +1,10 @@
 <%@page import="Models.User"%>
 <%@page import="java.util.List"%>
-<%@page import="Models.Book"%>
 <%@include  file="includes/datatable_header.jsp" %>
 
     <div class="container-fluid">
       <div class="row">
-        <%@include  file="../includes/sidebar.jsp" %>
+        <%@include  file="includes/sidebar.jsp" %>
 
         <div class="col-10 p-4 bg-light" >
           <h1 class="text-center mt-1" style="font-family: Arial, Helvetica, sans-serif" >

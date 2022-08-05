@@ -17,8 +17,8 @@
               <div class="dropdown-container">
                 <a class="nav-link text-white" href="http://localhost:8080/LibraryManagementSystem/Admin/all_books.jsp" >All Books</a>
                 <a class="nav-link text-white" href="http://localhost:8080/LibraryManagementSystem/Admin/register_book.jsp">Register Book</a>
-                <a class="nav-link text-white" href="book_issued.html">Issued Books</a>
-                <a class="nav-link text-white" href="book_returned.html">Returned Books</a>
+                <a class="nav-link text-white" href="http://localhost:8080/LibraryManagementSystem/Admin/issued_books.jsp">Issued Books</a>
+                <a class="nav-link text-white" href="http://localhost:8080/LibraryManagementSystem/Admin/book_history.jsp">Books History</a>
               </div>
             </li>
             <li class="nav-item">
@@ -31,7 +31,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link mt-1 mb-1 text-white" href="settings.jsp?${sessionScope['user_id']}">Settings</a>
+              <a class="nav-link mt-1 mb-1 text-white" href="http://localhost:8080/LibraryManagementSystem/Admin/settings.jsp">Settings</a>
             </li>
            
             <li class="nav-item">

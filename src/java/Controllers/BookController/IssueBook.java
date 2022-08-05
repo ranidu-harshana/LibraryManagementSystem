@@ -6,6 +6,8 @@
 package Controllers.BookController;
 
 import Models.BookUsers;
+import static Models.BookUsers.all_borrowed_books;
+import Models.Books;
 import Models.Users;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,6 +25,7 @@ public class IssueBook extends HttpServlet {
         
         String book_id = request.getParameter("book_id");
         Users user = Users.findByEmail(request.getParameter("email"));
+        Books book = Books.find(Integer.parseInt(book_id));
         
         if (user == null) {
             HttpSession session = request.getSession();
@@ -34,11 +37,26 @@ public class IssueBook extends HttpServlet {
         
             book_user.setUserId(user.getId());
             book_user.setBookId(Integer.parseInt(book_id));
+            book_user.setStatus((byte)1);
+            book_user.setReturnedDate(null);
             book_user.setCreatedAt(new Date());
-            BookUsers.save(book_user);
             
-            HttpSession session = request.getSession();
-            session.setAttribute("user-assign", "Book issued to "+user.getFname()+" "+user.getLname());
+            if (all_borrowed_books(user.getId()).size() == 0) {
+                if (book.getAvailableQty() - book.getBorrowQty() != 0) {
+                    book.setBorrowQty(book.getBorrowQty() + 1);
+                    BookUsers.save(book_user);
+                    Books.update(book);
+                
+                    HttpSession session = request.getSession();
+                    session.setAttribute("user-assign", "Book issued to "+user.getFname()+" "+user.getLname());
+                } else {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("user-assign", "No any book in stock");
+                }
+            } else {
+                HttpSession session = request.getSession();
+                session.setAttribute("user-assign", "You have already taken a book");
+            }
             
             response.sendRedirect("Admin/all_books.jsp");
         }

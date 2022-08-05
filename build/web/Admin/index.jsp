@@ -1,3 +1,4 @@
+<%@page import="Models.BookUsers"%>
 <%@page import="Models.Books"%>
 <%@page import="Models.User"%>
 <%@include  file="includes/header.jsp" %>
@@ -30,7 +31,7 @@
               <div class="card">
                 <div class="card-body bg-danger text-white">
                   <i class="fas fa-books fa-4x"></i>
-                  <h4 class="mt-2">Issued Books - <b>0</b></h4>
+                  <h4 class="mt-2">Issued Books - <b><% out.println(BookUsers.issued_book_count()); %></b></h4>
                 </div>
               </div>
             </div>

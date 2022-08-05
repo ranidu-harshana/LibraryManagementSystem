@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@page import="Models.Books"%>
 <%@page import="java.util.List"%>
 <%@include  file="includes/datatable_header.jsp" %>
@@ -36,7 +37,7 @@
                 <% List<Books> books = Books.view_all(); 
                     for (Books book : books) {
                         out.println("<tr>");
-                        out.println("<td>"+book.getName()+"</td>");
+                        out.println("<td><a href='../AdminViewBook?book_id="+book.getId()+"'>"+book.getName()+"</a></td>");
                         out.println("<td>"+book.getAuthor()+"</td>");
                         out.println("<td>"+book.getPublisherName()+"</td>");
                         out.println("<td>"+book.getPubDate()+"</td>");
@@ -61,6 +62,7 @@
                                             <label for="email" class="label">User Email</label><br>
                                             <% out.println("<input type='hidden' name='book_id' value='"+book.getId()+"'>"); %>
                                             <input type="email" id="email" name="email" placeholder="Enter user email" required class="form-control"/>
+                                            <% // out.println("<input type='date' id='due_date' name='due_date' value='"+(new Date())+"' required class='form-control'>"); %>
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -1,17 +1,28 @@
+<%@page import="Models.BookUsers"%>
+<%@page import="java.util.List"%>
+<%@page import="Models.Books"%>
 <div class="col-md-3 mb-2">
               <div class="card sidePanel">
                 <div class="card-body">
                     <div class="d-none d-md-block">	
-  
                         <span class="d-block p-2 text-white" style="background-color:#4997fe;"><i class="fas fa-tachometer-alt pr-2"></i> Dashboard</span>
   
-                        <span class="d-block p-2 mt-2 hmT2"><a href="profile.html" class="text-dark text-decoration-none">Profile</a></span>
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/index.jsp" class="text-dark text-decoration-none">Profile</a></span>
   
                         <span class="d-block p-2 hmT2 mt-2"><a href="http://localhost:8080/LibraryManagementSystem/Student/all_books.jsp" class="text-dark text-decoration-none"> Search Book</a></span>
 
-                        <span class="d-block p-2 mt-2 hmT2"><a href="bbook.html" class="text-dark text-decoration-none">Borrowed Books</a></span>
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/borrowed_books.jsp" class="text-dark text-decoration-none">Borrowed Books 
+                                <%
+                                    Object userss = session.getAttribute("user_id");
+                                    List<Books> bookss = BookUsers.all_borrowed_books(userss.hashCode());
+                                    if (bookss.size() > 0) {
+                                        out.println("<span class='badge badge-pill badge-danger'>1</span>");
+                                    }
+                                %>
+                                
+                            </a></span>
 
-                        <span class="d-block p-2 mt-2 hmT2"><a href="hbbok.html" class="text-dark text-decoration-none">Book History</a></span>
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/books_history.jsp" class="text-dark text-decoration-none">Book History</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2"><a href="help.html" class="text-dark text-decoration-none">Help</a></span>
 

@@ -159,6 +159,37 @@ public class Users  implements java.io.Serializable {
         
         return user;
     }
+    
+    public static Users find (int user_id) {
+        Session session = util.HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        Criteria cr = session.createCriteria(Users.class);
+        cr.add(Restrictions.eq("id", user_id));
+        List result = cr.list();
+        
+        Users user;
+        if (!result.isEmpty()) {
+            user = (Users) result.get(0);
+        } else {
+            user = null;
+        }
+        
+        transaction.commit();
+        session.close();
+        
+        return user;
+    }
+    
+    public static int update (Users user) {
+        Session session = util.HibernateUtil.getSessionFactory().openSession();
+        Transaction transaction = session.beginTransaction();
+        
+        session.update(user);
+        transaction.commit();
+        session.close();
+        
+        return 1;
+    }
 
 }
 

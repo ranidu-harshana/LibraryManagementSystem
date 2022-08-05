@@ -144,8 +144,17 @@ public class User {
             stmt.setInt(1, id);
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
-                user.setFname(rs.getString("name"));
-                user.setLname(rs.getString("name"));
+                user.setId(Integer.parseInt(rs.getString("id")));
+                user.setFname(rs.getString("fname"));
+                user.setLname(rs.getString("lname"));
+                user.setAddress(rs.getString("address"));
+                user.setGender(Integer.parseInt(rs.getString("gender")));
+                user.setDob(rs.getString("dob"));
+                user.setNic(rs.getString("nic"));
+                user.setEmail(rs.getString("email"));
+                user.setMobno(rs.getString("mobno"));
+                user.setPassword(rs.getString("password"));
+                user.setRole_id(Integer.parseInt(rs.getString("role_id")));
             }
         } catch (Exception e) {
         }

@@ -93,7 +93,7 @@
                         <h6>Front Page</h6>
                       </div>
                       <div class="col-6">
-                        <img src="http://localhost:8080/LibraryManagementSystem/assets/img/front.png" class="w-75" alt="">
+                        <img src='http://localhost:8080/LibraryManagementSystem/Admin/book_img/${book.imageFront}' class='w-75'>
                       </div>
                     </div>
 
@@ -102,7 +102,7 @@
                         <h6>Back Page</h6>
                       </div>
                       <div class="col-6">
-                        <img src="http://localhost:8080/LibraryManagementSystem/assets/img/back.png" class="w-75" alt="">
+                        <img src='http://localhost:8080/LibraryManagementSystem/Admin/book_img/${book.imageBack}' class='w-75'>
                       </div>
                     </div>                    
                   </div>                 

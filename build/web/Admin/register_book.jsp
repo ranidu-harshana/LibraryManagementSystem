@@ -28,7 +28,7 @@
                             <h3 class="mb-4 text-uppercase text-center">
                               Book registration form
                             </h3>
-                            <form action="../SaveBook" method="POST" autocomplete="off">
+                            <form action="../SaveBook" method="POST" autocomplete="off" enctype="multipart/form-data">
 <!--                            <div class="form-outline mb-3">
                                   <input type="text" id="book_id" class="form-control" placeholder="Book ID" />
                                 </div>-->
@@ -40,18 +40,20 @@
                                 <div class="form-outline mb-3">
                                   <input type="text" name="author" class="form-control" placeholder="Author Name" required/>
                                 </div>
-<!--                                <div class="row">
+                                <div class="row">
                                   <div class="col-6 mb-3">
                                     <div class="form-outline">
-                                      <input type="text" id="author_f_name" class="form-control" placeholder=" Author First Name"/>
+                                        <label>Front Cover image</label>
+                                        <input type="file" name="image_front" class="form-control" placeholder=" Front Cover image" />
                                     </div>
                                   </div>
                                   <div class="col-6 mb-3">
                                     <div class="form-outline">
-                                      <input type="text" id="autho_l_name" class="form-control" placeholder="Author Last Name" />
+                                        <label>Back Cover image</label>
+                                      <input type="file" name="image_back" class="form-control" placeholder="Back Cover Image" />
                                     </div>
                                   </div>
-                                </div>-->
+                                </div>
 
                                 <div class="form-outline mb-3">
                                   <input type="text" name="isbn" class="form-control" placeholder="ISBN Number" required/>
@@ -68,6 +70,9 @@
                                   </div>
                                 </div>
 
+                                <div class="form-outline mb-3">
+                                  <input type="number" name="available_qty" class="form-control" placeholder="Available Quantity" required/>
+                                </div>
                                 <div class="d-flex justify-content-end">
                                     <button type="button" class="btn btn-danger mr-2 px-3"> Clear </button>
                                     <button type="submit" class="btn btn-warning px-4">Add</button>

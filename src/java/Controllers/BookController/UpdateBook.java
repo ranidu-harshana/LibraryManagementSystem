@@ -35,6 +35,7 @@ public class UpdateBook extends HttpServlet {
         String isbn = request.getParameter("isbn");
         String publisher_name = request.getParameter("publisher_name");
         String pub_dateS = request.getParameter("pub_date");
+        int available_qty = Integer.parseInt(request.getParameter("available_qty"));
 
         Date pub_dateD = null;  
         try {
@@ -50,6 +51,10 @@ public class UpdateBook extends HttpServlet {
         book.setIsbn(isbn);
         book.setPublisherName(publisher_name);
         book.setPubDate(pub_dateD);
+        book.setImageFront("front");
+        book.setImageBack("back");
+        book.setAvailableQty(available_qty);
+        book.setBorrowQty(0);
         
         int status = Books.update(book);
         

@@ -40,6 +40,18 @@
         <servlet-name>ViewBook</servlet-name>
         <servlet-class>Controllers.BookController.ViewBook</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReturnBook</servlet-name>
+        <servlet-class>Controllers.BookController.ReturnBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateUser</servlet-name>
+        <servlet-class>Controllers.UserController.UpdateUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminViewBook</servlet-name>
+        <servlet-class>Controllers.BookController.AdminViewBook</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ViewUser</servlet-name>
         <url-pattern>/ViewUser</url-pattern>
@@ -75,6 +87,18 @@
     <servlet-mapping>
         <servlet-name>ViewBook</servlet-name>
         <url-pattern>/ViewBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReturnBook</servlet-name>
+        <url-pattern>/ReturnBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateUser</servlet-name>
+        <url-pattern>/UpdateUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminViewBook</servlet-name>
+        <url-pattern>/AdminViewBook</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
