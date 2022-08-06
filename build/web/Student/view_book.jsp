@@ -75,7 +75,7 @@
                         <h6>All Book Qty.</h6>
                       </div>
                       <div class="col-6">
-                        <h6>13</h6>
+                        <h6>${book.getAvailableQty()}</h6>
                       </div>
                     </div>
 
@@ -84,7 +84,7 @@
                         <h6>Available Book Qty.</h6>
                       </div>
                       <div class="col-6">
-                        <h6>5</h6>
+                        <h6>${book.getAvailableQty() - book.getBorrowQty()}</h6>
                       </div>
                     </div>
 

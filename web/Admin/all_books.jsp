@@ -27,8 +27,8 @@
                 <th>Author name</th>
                 <th>Publisher Name</th>
                 <th>Published Date</th>
-<!--                <th>Quantity</th>
-                <th>Available Qty.</th>-->
+                <th>Quantity</th>
+                <th>Available Qty.</th>
                 <th>Edit</th>
                 <th>Issue</th>
               </tr>
@@ -41,8 +41,8 @@
                         out.println("<td>"+book.getAuthor()+"</td>");
                         out.println("<td>"+book.getPublisherName()+"</td>");
                         out.println("<td>"+book.getPubDate()+"</td>");
-//                        out.println("<td>"+book.getStatus()+"</td>");
-//                        out.println("<td>"+book.getName()+"</td>");
+                        out.println("<td>"+book.getAvailableQty()+"</td>");
+                        out.println("<td>"+(book.getAvailableQty() - book.getBorrowQty())+"</td>");
                         out.println("<td><a href='../EditBook?book_id="+book.getId()+"'><button class='btn btn-sm btn-warning'>Edit</button></a></td>");
                         
                         out.println("<td><button type='button' class='btn btn-sm btn-success' data-toggle='modal' data-target='#bookIssueModal"+book.getId()+"'>Issue</button>");

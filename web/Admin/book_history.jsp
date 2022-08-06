@@ -12,7 +12,7 @@
         <div class="col-10 p-4 bg-light" >
             
           <h1 class="text-center mt-1" style="font-family: Arial, Helvetica, sans-serif" >
-            All Books
+            Book History
           </h1>
             <% if (session.getAttribute("user-assign") != null) { %>
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -39,7 +39,7 @@
                     List<Users> users = (List<Users>) books_users.get(1);
                     for (int i = 0; i < books.size(); i++) {
                         out.println("<tr>");
-                        out.println("<td>"+books.get(i).getName()+"</td>");
+                        out.println("<td><a href='../AdminViewBook?book_id="+books.get(i).getId()+"'>"+books.get(i).getName()+"</a></td>");
                         out.println("<td>"+users.get(i).getFname()+"</td>");
                         out.println("<td>"+users.get(i).getEmail()+"</td>");
                         BookUsers book_user = BookUsers.get_book_users_details_history(users.get(i).getId(), books.get(i).getId());

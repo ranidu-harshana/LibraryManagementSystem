@@ -44,13 +44,13 @@
                                   <div class="col-6 mb-3">
                                     <div class="form-outline">
                                         <label>Front Cover image</label>
-                                        <input type="file" name="image_front" class="form-control" placeholder=" Front Cover image" />
+                                        <input type="file" name="image_front" class="form-control" placeholder=" Front Cover image" required/>
                                     </div>
                                   </div>
                                   <div class="col-6 mb-3">
                                     <div class="form-outline">
                                         <label>Back Cover image</label>
-                                      <input type="file" name="image_back" class="form-control" placeholder="Back Cover Image" />
+                                      <input type="file" name="image_back" class="form-control" placeholder="Back Cover Image" required/>
                                     </div>
                                   </div>
                                 </div>
