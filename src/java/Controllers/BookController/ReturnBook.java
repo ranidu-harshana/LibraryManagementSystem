@@ -39,12 +39,12 @@ public class ReturnBook extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("book-returned", "Book Returned.");
             
-            request.getRequestDispatcher("/Admin/issued_books.jsp").forward(request, response);
+            response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/issued_books.jsp");
         } else {
             HttpSession session = request.getSession();
             session.setAttribute("book-returned", "Book Return Failed.");
             
-            request.getRequestDispatcher("/Admin/issued_books.jsp").forward(request, response);
+            response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/issued_books.jsp");
         }
     }
 

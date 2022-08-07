@@ -46,7 +46,7 @@
 
             <!-- Home Item -->
             <li class="nav-item mr-2"> 
-              <a href="index.html" class="nav-link menuText hmT"><i class="fas fa-home"></i> Home</a>
+              <a href="index.jsp" class="nav-link menuText hmT"><i class="fas fa-home"></i> Home</a>
             </li> <!-- Home Item end-->
 
             <% if (session.getAttribute("user_id") != null) {

@@ -58,7 +58,7 @@ public class IssueBook extends HttpServlet {
                 session.setAttribute("user-assign", "You have already taken a book");
             }
             
-            response.sendRedirect("Admin/all_books.jsp");
+            response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/all_books.jsp");
         }
         
     }
