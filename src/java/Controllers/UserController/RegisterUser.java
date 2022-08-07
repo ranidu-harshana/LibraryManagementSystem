@@ -41,12 +41,12 @@ public class RegisterUser extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("user-registerd", "New User Registered.");
 
-                response.sendRedirect("Admin/register_user.jsp");
+                response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/register_user.jsp");
             } else {
                 HttpSession session = request.getSession();
                 session.setAttribute("user-registerd-failed", "Failed to Register User!");
 
-                response.sendRedirect("Admin/register_user.jsp");
+                response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/register_user.jsp");
             }
     }
 }

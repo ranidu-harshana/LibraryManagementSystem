@@ -93,12 +93,12 @@ public class SaveBook extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("book-registerd", "Failed to Addd Book!");
 
-            response.sendRedirect("Admin/register_book.jsp");
+            response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/register_book.jsp");
         } else {
             HttpSession session = request.getSession();
             session.setAttribute("book-registerd", "New Book Added.");
 
-            response.sendRedirect("Admin/register_book.jsp");
+            response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/register_book.jsp");
         }
     }
     

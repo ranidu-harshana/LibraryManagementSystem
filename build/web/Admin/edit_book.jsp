@@ -69,7 +69,7 @@
 
                                 <div class="d-flex justify-content-end">
                                     <button type="button" class="btn btn-danger mr-2 px-3"> Clear </button>
-                                    <button type="submit" class="btn btn-warning px-4">Add</button>
+                                    <button type="submit" class="btn btn-warning px-4">Update</button>
                                 </div>
                             </form>
                         </div>
