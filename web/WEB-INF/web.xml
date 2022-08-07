@@ -52,6 +52,14 @@
         <servlet-name>AdminViewBook</servlet-name>
         <servlet-class>Controllers.BookController.AdminViewBook</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StudentChangePassword</servlet-name>
+        <servlet-class>Controllers.UserController.StudentChangePassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetPassword</servlet-name>
+        <servlet-class>Controllers.UserController.ResetPassword</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ViewUser</servlet-name>
         <url-pattern>/ViewUser</url-pattern>
@@ -99,6 +107,14 @@
     <servlet-mapping>
         <servlet-name>AdminViewBook</servlet-name>
         <url-pattern>/AdminViewBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentChangePassword</servlet-name>
+        <url-pattern>/StudentChangePassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetPassword</servlet-name>
+        <url-pattern>/ResetPassword</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

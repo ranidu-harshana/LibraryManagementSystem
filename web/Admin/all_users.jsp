@@ -20,6 +20,7 @@
                 <th>NIC</th>
                 <th>Email</th>
                 <th>Mob No.</th>
+                <th>Reset Password</th>
               </tr>
             </thead>
             <tbody>
@@ -33,6 +34,32 @@
                         out.println("<td>"+user.getNic()+"</td>");
                         out.println("<td>"+user.getEmail()+"</td>");
                         out.println("<td>"+user.getMobno()+"</td>");
+                        out.println("<td><button type='button' class='btn btn-danger btn-sm' data-toggle='modal' data-target='#resetPasswordModal"+user.getId()+"'>Reset</button></td>");
+
+                        out.println("<div class='modal fade' id='resetPasswordModal"+user.getId()+"' tabindex='-1' role='dialog' aria-labelledby='resetPasswordModal"+user.getId()+"Label' aria-hidden='true'>");
+                        %>    
+                            <div class='modal-dialog' role='document'>
+                            <div class='modal-content'>
+                                <div class='modal-header'>
+                                <h5 class='modal-title' id='resetPasswordModalLabel'>Modal title</h5>
+                                <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                </button>
+                                </div>
+                                <form action="../ResetPassword" method="POST">
+                                    <div class='modal-body'>
+                                        Are you sure, you want to reset password of this user?
+                                        <% out.println("<input type='hidden' name='user_id' value='"+user.getId()+"'>"); %>
+                                    </div>
+                                    <div class='modal-footer'>
+                                        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                                        <button type='submit' class='btn btn-primary'>Reset</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                            <%
                         out.println("</tr>");
                     }
                 %>

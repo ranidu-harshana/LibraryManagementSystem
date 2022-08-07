@@ -25,6 +25,8 @@
                         <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/books_history.jsp" class="text-dark text-decoration-none">Book History</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2"><a href="help.html" class="text-dark text-decoration-none">Help</a></span>
+                
+                        <span class="d-block p-2 hmT2 mt-2"><a href="http://localhost:8080/LibraryManagementSystem/Student/change_password.jsp" class="text-dark text-decoration-none"> Change Password</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2">
                             <a class="text-dark text-decoration-none" href="LogoutUser" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -43,15 +45,17 @@
   
                         <div class="dropdown-menu text-center w-100" aria-labelledby="dropdownMenuButton">
   
-                        <span class="d-block p-2 mt-2 hmT2"><a href="profile.html" class="text-dark text-decoration-none">Profile</a></span>
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/index.jsp" class="text-dark text-decoration-none">Profile</a></span>
   
-                        <span class="d-block p-2 hmT2 mt-2"><a href="search.html" class="text-dark text-decoration-none"> Search Book</a></span>
+                        <span class="d-block p-2 hmT2 mt-2"><a href="http://localhost:8080/LibraryManagementSystem/Student/all_books.jsp" class="text-dark text-decoration-none"> Search Book</a></span>
 
-                        <span class="d-block p-2 mt-2 hmT2"><a href="bbook.html" class="text-dark text-decoration-none">Borrowed Books</a></span>
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/borrowed_books.jsp" class="text-dark text-decoration-none">Borrowed Books</a></span>
 
-                        <span class="d-block p-2 mt-2 hmT2"><a href="hbbok.html" class="text-dark text-decoration-none">Book History</a></span>
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/books_history.jsp" class="text-dark text-decoration-none">Book History</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2"><a href="help.html" class="text-dark text-decoration-none">Help</a></span>
+    
+                        <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/change_password.jsp" class="text-dark text-decoration-none">Change Password</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2">
                             <a class="text-dark text-decoration-none" href="LogoutUser" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

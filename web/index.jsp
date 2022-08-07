@@ -76,22 +76,13 @@
       <div class="context col text-center mt-4" style="z-index: 1;">
           <h1>Read | Lead | Succeed</h1>
           <p class="lead">If you don?t like to read, you haven?t found the right book</p>
-          <a href="signup.html" class="btn btn-lg" style="background-color: #4997fe;color: #ffffff;"><b>Get Started</b></a>
+          <% if (session.getAttribute("user_id") == null) { %>
+            <a href="signup.html" class="btn btn-lg" style="background-color: #4997fe;color: #ffffff;"><b>Get Started</b></a>
+          <% } %>     
+          
       </div>
           
       <div class="area" style="z-index: -1;">
-          <!-- <ul class="circles">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-          </ul> -->
       </div>
   </section> <!-- SHOWCASE END -->
 

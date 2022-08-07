@@ -52,28 +52,19 @@ public class UpdateUser extends HttpServlet {
         user.setNic(nic);
         user.setMobno(mobno);
         
-        System.out.println(Integer.parseInt(request.getParameter("user_id")));
-        System.out.println(fname);
-        System.out.println(lname);
-        System.out.println(address);
-        System.out.println(dobD);
-        System.out.println(nic);
-        System.out.println(mobno);
         int status = Users.update(user);
-        
-        System.out.println(status);
         
         if ( status == 1 ) {
             if (user.getRoleId() == 1) {
                 HttpSession session = request.getSession();
                 session.setAttribute("user-edited", "User Edited.");
             
-                response.sendRedirect("Admin/settings.jsp");
+                response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/settings.jsp");
             } else {
                 HttpSession session = request.getSession();
                 session.setAttribute("user-edited", "User Edited.");
             
-                response.sendRedirect("Student/index.jsp");
+                response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Student/index.jsp");
             }
             
         } else {
@@ -81,12 +72,12 @@ public class UpdateUser extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("user-edited", "User Edit Failed.");
             
-                response.sendRedirect("Admin/settings.jsp");
+                response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Admin/settings.jsp");
             } else {
                 HttpSession session = request.getSession();
                 session.setAttribute("user-edited", "User Edit Failed.");
             
-                response.sendRedirect("Student/index.jsp");
+                response.sendRedirect("http://localhost:8080/LibraryManagementSystem/Student/index.jsp");
             }
         }
     }
