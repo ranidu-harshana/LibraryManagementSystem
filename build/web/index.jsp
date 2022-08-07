@@ -31,7 +31,7 @@
     <!-- ########################################  Navigation Bar ######################################## -->
     <nav class="navbar navbar-expand-sm fixed-top">
       <div class="container">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.jsp" class="navbar-brand">
           <img src="http://localhost:8080/LibraryManagementSystem/assets/img/logo.png" id="navbarLogo" height="45" alt="LMS Logo" /> <!-- Navigation Bar Logo -->
         </a>
 
@@ -75,9 +75,9 @@
     <section id="showcase" >
       <div class="context col text-center mt-4" style="z-index: 1;">
           <h1>Read | Lead | Succeed</h1>
-          <p class="lead">If you don?t like to read, you haven?t found the right book</p>
+          <p class="lead">If you don?t like to read, you haven't found the right book</p>
           <% if (session.getAttribute("user_id") == null) { %>
-            <a href="signup.html" class="btn btn-lg" style="background-color: #4997fe;color: #ffffff;"><b>Get Started</b></a>
+            <a href="login.jsp" class="btn btn-lg" style="background-color: #4997fe;color: #ffffff;"><b>Get Started</b></a>
           <% } %>     
           
       </div>
@@ -105,7 +105,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-6 text-center">
-                  <img src="img/hg2.jpg" alt="" class="img-fluid mt-2 mb-3" style="max-width: 80%;">
+                  <img src="http://localhost:8080/LibraryManagementSystem/assets/img/homepage1.jpg" alt="" class="img-fluid mt-2 mb-3" style="max-width: 80%;">
               </div>
               <div class="col-md-6">
                    <h3>What are the best books of all time? </h3>
@@ -115,7 +115,7 @@
                            <i class="fas fa-check fa-2x"></i>
                        </div>
                        <div class="p-4 align-self-end">
-                        Using manual and computerized diagnostic methods to identify potential problems in a vehicle
+                            Using manual and computerized diagnostic methods to identify potential problems in a vehicle
                        </div>
                    </div>
                    <div class="d-flex">
@@ -136,7 +136,7 @@
           <div class="row">
               
               <div class="col-md-6 d-sm-none text-center">
-                  <img src="img/hg1.jpg" alt="" class="img-fluid mb-3" >
+                  <img src="http://localhost:8080/LibraryManagementSystem/assets/img/homepage2.jpg" alt="" class="img-fluid mb-3" >
               </div>
 
               <div class="col-md-6">
@@ -160,7 +160,7 @@
                   </div>
               </div>
               <div class="col-md-6 text-center d-none d-sm-block">
-                  <img src="img/hg1.jpg" alt="" class="w-75 img-fluid mb-3" >
+                  <img src="http://localhost:8080/LibraryManagementSystem/assets/img/homepage2.jpg" alt="" class="w-75 img-fluid mb-3" >
               </div>
 
           </div>

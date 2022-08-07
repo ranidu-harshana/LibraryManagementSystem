@@ -24,8 +24,6 @@
 
                         <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/books_history.jsp" class="text-dark text-decoration-none">Book History</a></span>
 
-                        <span class="d-block p-2 mt-2 hmT2"><a href="help.html" class="text-dark text-decoration-none">Help</a></span>
-                
                         <span class="d-block p-2 hmT2 mt-2"><a href="http://localhost:8080/LibraryManagementSystem/Student/change_password.jsp" class="text-dark text-decoration-none"> Change Password</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2">
@@ -53,8 +51,6 @@
 
                         <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/books_history.jsp" class="text-dark text-decoration-none">Book History</a></span>
 
-                        <span class="d-block p-2 mt-2 hmT2"><a href="help.html" class="text-dark text-decoration-none">Help</a></span>
-    
                         <span class="d-block p-2 mt-2 hmT2"><a href="http://localhost:8080/LibraryManagementSystem/Student/change_password.jsp" class="text-dark text-decoration-none">Change Password</a></span>
 
                         <span class="d-block p-2 mt-2 hmT2">
